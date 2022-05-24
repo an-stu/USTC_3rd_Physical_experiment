@@ -1,0 +1,77 @@
+\documentclass[utf8]{ctexart}
+
+
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage[numbers]{natbib} 
+\usepackage{geometry}
+\geometry{left=3.0cm,right=3.0cm,top=2.5cm,bottom=2.5cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{10mm}
+\rhead{}
+\lhead{}
+\fancyhead[C]{
+	\begingroup
+	\setlength{\tabcolsep}{10pt} % Default value: 6pt
+	\renewcommand{\arraystretch}{1.5} % Default value: 1
+	\begin{tabular}{ccc}
+		& \large{\textbf{大物实验报告模板}} &  \\
+		少年班学院 \qquad \qquad & 刘子安 PB20000069 & \qquad \today
+	\end{tabular}
+	\endgroup
+}   %在此处插入作者信息，改变页眉，此页眉是由我设计的，类似于实验报告纸
+\fancyfoot[C]{ 第 {\thepage} 页，共 \pageref{unknown} 页}
+\renewcommand{\headrulewidth}{0pt}
+
+
+\usepackage{graphicx}
+
+\usepackage{siunitx} % 单位
+
+\begin{document}
+
+	\subsection*{1.实验目的}	
+
+	\subsection*{2.实验器材:} 
+	
+	\subsection*{3.实验原理}
+	
+	
+	
+	
+	\subsection*{4.数据分析及处理}
+	\subsubsection*{(1).数据处理及不确定度分析}
+	
+	
+	
+	\subsubsection*{(2).误差分析}
+	
+	\subsubsection*{(3).实验讨论}
+	
+	\subsection*{5.思考题}
+	\begin{itemize}
+		\item [1.]
+		\item [ ]答：
+		\item [2.]
+		\item [ ]答：
+		\item [3.]
+		\item [ ]答：
+		\item [4.]
+		\item [ ]答：
+	\end{itemize}
+	
+	
+	\subsection*{6.总结}
+	
+	\section*{致谢}
+	
+	\begin{center}
+		感谢\cite{bk1}大学物理实验中心和韦先涛老师
+	\end{center}
+	\bibliographystyle{plain}
+	\bibliography{example} % 同文件夹下新建所需的example.bib文件
+	
+	
+	\label{unknown}
+\end{document}

@@ -1,0 +1,148 @@
+\documentclass[utf8]{ctexart}
+
+
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage[numbers]{natbib} 
+\usepackage{geometry}
+\geometry{left=3.0cm,right=3.0cm,top=2.5cm,bottom=2.5cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{10mm}
+\rhead{}
+\lhead{}
+\fancyhead[C]{
+	\begingroup
+	\setlength{\tabcolsep}{10pt} % Default value: 6pt
+	\renewcommand{\arraystretch}{1.5} % Default value: 1
+	\begin{tabular}{ccc}
+		& \large{\textbf{氢氘光谱实验报告}} &  \\
+		少年班学院 \qquad \qquad & 刘子安 PB20000069 & \qquad \today
+	\end{tabular}
+	\endgroup
+}   %在此处插入作者信息，改变页眉，此页眉是由我设计的，类似于实验报告纸
+\fancyfoot[C]{ 第 {\thepage} 页，共 \pageref{unknown} 页}
+\renewcommand{\headrulewidth}{0pt}
+
+
+\usepackage{graphicx}
+
+\usepackage{siunitx} % 单位
+
+\begin{document}
+
+	\subsection*{1.实验目的}	
+    \begin{itemize}
+        \item [1.] 了解氢氘光谱实验仪的基本构造和使用方法，知道如何使用光栅光谱仪
+        测量光谱。
+        \item [2.] 知道同位素原子光谱的区别，学会测量氢氘巴耳末系的前四条谱线。
+        \item [3.] 可以通过氢氘巴耳末系的前四条谱线计算里德伯常数、氢氘质量比以及质子电子质量比。
+    \end{itemize}
+	\subsection*{2.实验原理} 
+	具有相同质子数，不同中子数同一元素的不同核素互为同位素。
+    在谱线上，同位素对应的谱线会发生移位，称为同位素移位。
+
+    由原子物理的知识可以知道，氢原子巴耳末系的谱线波长满足规律:
+    \begin{equation} \label{lambda}
+        \frac{1}{\lambda} = R\left(\frac{1}{2^2}-\frac{1}{n^2}\right) = \frac{R_{\infty}}{1+m_e/M}\left(\frac{1}{2^2}-\frac{1}{n^2}\right)
+    \end{equation}
+    其中
+    \begin{equation}
+        R_{\infty} = \frac{2\pi^2me^4}{(4\pi\varepsilon_0)^2ch^3}
+    \end{equation}
+    $h$是普朗克常数，$c$是光速，$\varepsilon_0$为真空中介电常数。
+
+    氘是氢的同位素，它们有相同的质子和核外电子，只是氘比氢多了一个中子而使原子核的质量
+    发生变化，从而使它的里德伯常量值也发生变化，两者的里德伯常量分别为：
+    \begin{equation} \label{RH}
+        R_H = \frac{R_\infty}{1+m_e/M_H}
+    \end{equation}
+    \begin{equation} \label{RD}
+        R_D = \frac{R_\infty}{1+m_e/M_D}
+    \end{equation}
+    其中$M_H$和$M_D$分别表示氢与氘原子核的质量，由(\ref{RH})和(\ref{RD})式以及
+    两同位素的巴尔末公式(\ref{lambda})将可解得：
+    \begin{equation}
+        \frac{M_D}{M_H} = \frac{m}{M_H}\times\frac{\lambda_H}{(\lambda_D-\lambda_H+\lambda_D\frac{m}{M_H})}
+    \end{equation}
+    利用测量的波长计算氢氘谱峰的波长差：
+    \begin{equation}
+            \Delta\lambda = \lambda_H-\lambda_D = \left( \frac{1}{R_H} - \frac{1}{R_D} \right)
+            \bigg/\left( \frac{1}{2^2} - \frac{1}{n^2} \right) \approx 
+            \frac{\frac{M+m}{M}-\frac{2M+m}{2M}}{1/\lambda}=\frac{m}{2M}\lambda
+    \end{equation}
+    即有：
+    \begin{equation}
+        \frac{M}{m} = \frac{\lambda}{2\Delta\lambda}
+    \end{equation}
+
+	\subsection*{3.实验仪器}
+	电源、光电倍增管、光谱仪、汞灯、氢氘灯。
+    \vspace{4em}
+	
+	\subsection*{4.实验数据处理}
+	\subsubsection*{(1).实验数据表格}
+    对汞灯谱线的测量数据如下：
+	\begin{table}[htbp]
+        \centering
+        \caption{汞灯测量数据}
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            汞灯谱线序号 & 1 & 2 & 3 & 4 & 5 \\
+            \hline
+            波长$/\unit{nm}$ & 365.02 & 365.49 & 366.30 & 404.61 & 407.72 \\
+            \hline
+            汞灯谱线序号 & 6 & 7 & 8 & 9 & \\
+            \hline
+            波长$/\unit{nm}$ & 435.85 & 546.04 & 576.84 & 578.98 & \\
+            \hline
+            
+        \end{tabular}
+    \end{table}
+
+    氢氘灯的测量数据：
+
+    \begin{table}[htbp]
+        \centering
+        \caption{氢氘灯测量数据}
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            能级n & 3 & 4 & 5 & 6 \\
+            \hline
+            波长 $\lambda_H/\unit{nm}$ & 656.50 & 486.08 & 434.02 & \\
+            \hline
+            波长 $\lambda_D/\unit{nm}$ & 656.70 & 485.94 & 433.87 & \\
+            \hline
+        \end{tabular}
+    \end{table}
+	由于时间问题，未能调整好能级为6时对应的谱线，所以没有测出该能级对应的波长。
+	\subsubsection*{(2).误差分析}
+	
+	\subsubsection*{(3).实验讨论}
+	
+	\subsection*{5.思考题}
+	\begin{itemize}
+		\item [1.]
+		\item [ ]答：
+		\item [2.]
+		\item [ ]答：
+		\item [3.]
+		\item [ ]答：
+		\item [4.]
+		\item [ ]答：
+	\end{itemize}
+	
+	
+	\subsection*{6.总结}
+	
+	\section*{致谢}
+	
+	\begin{center}
+		感谢\cite{bk1}大学物理实验中心和韦先涛老师
+	\end{center}
+	\bibliographystyle{plain}
+	\bibliography{example} % 同文件夹下新建所需的example.bib文件
+	
+	
+	\label{unknown}
+\end{document}

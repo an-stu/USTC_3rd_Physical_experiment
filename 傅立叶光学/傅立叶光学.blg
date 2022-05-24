@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 傅立叶光学.aux
+The style file: plain.bst
+Database file #1: Fourier.bib
+You've used 5 entries,
+            2118 wiz_defined-function locations,
+            522 strings with 4500 characters,
+and the built_in function-call counts, 1297 in all, are:
+= -- 128
+> -- 35
+< -- 2
++ -- 15
+- -- 10
+* -- 59
+:= -- 226
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 67
+empty$ -- 114
+format.name$ -- 10
+if$ -- 283
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 6
+newline$ -- 28
+num.names$ -- 10
+pop$ -- 25
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 47
+stack$ -- 0
+substring$ -- 57
+swap$ -- 17
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 14
+width$ -- 6
+write$ -- 57
